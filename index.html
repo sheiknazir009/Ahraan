@@ -1,0 +1,481 @@
+!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AHRAAN'S ESPORTS</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050816;
+    color: white;
+}
+
+header {
+    background: #111827;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+}
+
+header h1 {
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #111827, #003b66);
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: #00aaff;
+}
+
+.hero p {
+    color: #cbd5e1;
+    margin: 20px;
+    font-size: 18px;
+}
+
+button {
+    background: #008cff;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:active {
+    background: #006dcc;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 30px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #111827;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #263244;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.tournament {
+    background: #111827;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #008cff;
+}
+
+.prize {
+    color: #ffd700;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+    background: #111827;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    background: #0f172a;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 7px;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#message {
+    display: none;
+    background: #064e3b;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.player {
+    background: #111827;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #00aaff;
+    border-radius: 8px;
+}
+
+footer {
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+
+    .games {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🎮 AHRAAN'S ESPORTS</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#games">Games</a>
+<a href="#tournament">Tournament</a>
+<a href="#register">Register</a>
+</nav>
+
+</header>
+
+
+<div class="hero" id="home">
+
+<h2>
+WELCOME TO
+<br>
+<span>AHRAAN'S ESPORTS</span>
+</h2>
+
+<p>
+Play • Compete • Win 🏆
+</p>
+
+<a href="#register">
+<button>REGISTER NOW</button>
+</a>
+
+</div>
+
+
+<section id="games">
+
+<h2>🎮 OUR GAMES</h2>
+
+<div class="games">
+
+<div class="card">
+
+<div class="icon">🔫</div>
+
+<h3>Free Fire</h3>
+
+<p>Battle Royale Tournament</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚽</div>
+
+<h3>eFootball</h3>
+
+<p>Football Competition</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⛏️</div>
+
+<h3>Minecraft</h3>
+
+<p>Gaming Competition</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="tournament">
+
+<h2>🏆 TOURNAMENT</h2>
+
+<div class="tournament">
+
+<h3>AHRAAN'S ESPORTS CUP</h3>
+
+<div class="prize">
+₹300
+</div>
+
+<p>PRIZE POOL</p>
+
+<br>
+
+<p>🎮 Games: Free Fire / eFootball / Minecraft</p>
+
+<br>
+
+<p>👥 Registration: Open</p>
+
+<br>
+
+<p>📅 Date: Coming Soon</p>
+
+<br>
+
+<a href="#register">
+<button>JOIN TOURNAMENT</button>
+</a>
+
+</div>
+
+</section>
+
+
+<section id="register">
+
+<h2>📝 PLAYER REGISTRATION</h2>
+
+<div class="form">
+
+<input
+id="name"
+type="text"
+placeholder="Player Name"
+>
+
+<input
+id="gameid"
+type="text"
+placeholder="Game ID"
+>
+
+<select id="game">
+
+<option value="">
+Select Game
+</option>
+
+<option value="Free Fire">
+Free Fire
+</option>
+
+<option value="eFootball">
+eFootball
+</option>
+
+<option value="Minecraft">
+Minecraft
+</option>
+
+</select>
+
+<button onclick="registerPlayer()">
+REGISTER PLAYER
+</button>
+
+<div id="message"></div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>👥 REGISTERED PLAYERS</h2>
+
+<div id="players"></div>
+
+</section>
+
+
+<footer>
+
+<p>🎮 AHRAAN'S ESPORTS</p>
+
+<br>
+
+<p>Play • Compete • Win 🏆</p>
+
+<br>
+
+<p>©️ 2026 AHRAAN'S ESPORTS</p>
+
+</footer>
+
+
+<script>
+
+let players = JSON.parse(
+localStorage.getItem("ahraan_players")
+) || [];
+
+
+function registerPlayer() {
+
+    let name = document.getElementById("name").value.trim();
+
+    let gameid = document.getElementById("gameid").value.trim();
+
+    let game = document.getElementById("game").value;
+
+    if (name === "") {
+        alert("Enter Player Name");
+        return;
+    }
+
+    if (gameid === "") {
+        alert("Enter Game ID");
+        return;
+    }
+
+    if (game === "") {
+        alert("Select Game");
+        return;
+    }
+
+    let player = {
+        name: name,
+        gameid: gameid,
+        game: game
+    };
+
+    players.push(player);
+
+    localStorage.setItem(
+        "ahraan_players",
+        JSON.stringify(players)
+    );
+
+    document.getElementById("name").value = "";
+
+    document.getElementById("gameid").value = "";
+
+    document.getElementById("game").value = "";
+
+    let message = document.getElementById("message");
+
+    message.style.display = "block";
+
+    message.innerHTML =
+    "🎉 Registration Successful!<br>Welcome " + name;
+
+    showPlayers();
+}
+
+
+function showPlayers() {
+
+    let box = document.getElementById("players");
+
+    box.innerHTML = "";
+
+    if (players.length === 0) {
+
+        box.innerHTML =
+        "<p>No players registered yet.</p>";
+
+        return;
+    }
+
+    for (let i = 0; i < players.length; i++) {
+
+        let p = players[i];
+
+        let div = document.createElement("div");
+
+        div.className = "player";
+
+        div.innerHTML =
+        "<b>#" + (i + 1) + " " + p.name + "</b>" +
+        "<br><br>" +
+        "🎮 Game: " + p.game +
+        "<br>" +
+        "🆔 Game ID: " + p.gameid;
+
+        box.appendChild(div);
+    }
+}
+
+
+showPlayers();
+
+</script>
+
+</body>
+</html>
